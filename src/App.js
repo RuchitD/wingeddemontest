@@ -383,12 +383,7 @@ function App() {
       <div style={{ paddingTop: "1rem" }}>
         <p class="text-center font-bold	"> thanks to </p>
         <div class="whitespace-pre ...">
-          <p class="text-center">
-            {" "}
-            Chevron for helping out with react, Megasett for guidance on what to
-            write about, Entrid and Ari for their input, Ayako for being
-            awesome, and Timbermaw for calling us "Winged Demons"
-          </p>
+          <p class="text-center"> special people</p>
         </div>
       </div>
     </div>
