@@ -260,23 +260,85 @@ function App() {
           paddingTop: "2rem",
         }}
       >
-        <div class="flex">
-          <div class="flex">
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
             <img src={require("./defender.jpg")} height={50} width={50} />
           </div>
 
-          <span>
-            This setup is more geared towards raid where Dauntless Duelist is
-            unmatched.
+          <span class="text-center max-w-xs">
+            Blur is already a very strong CD, and this conduit drops its
+            cooldown to 43 seconds. <br />
+            This can be used to DR certain repetitive mechanics or simply just
+            boost your overall survivability.
           </span>
         </div>
-        <div class="flex">
-          <div class="flex">
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
             <img src={require("./ink.jpg")} height={50} width={50} />
           </div>
-          <span>
-            For M+ you're going to run Triple Potency since Dauntless Duelist
-            isn't as effective
+          <span class="text-center max-w-xs">
+            At max level this conduit boosts your magic resistance up to 23%
+            (not including vers and other DR). This lets you
+          </span>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
+            <img src={require("./relentless.jpg")} height={50} width={50} />
+          </div>
+
+          <span class="text-center max-w-xs">
+            Blur is already a very strong CD, and this conduit drops its
+            cooldown to 43 seconds. <br />
+            This can be used to DR certain repetitive mechanics or simply just
+            boost your overall survivability.
+          </span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
+            <img src={require("./growinginferno.jpg")} height={50} width={50} />
+          </div>
+          <span class="text-center max-w-xs">
+            At max level this conduit boosts your magic resistance up to 23%
+            (not including vers and other DR). This lets you
+          </span>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
+            <img src={require("./duel.jpg")} height={50} width={50} />
+          </div>
+
+          <span class="text-center max-w-xs">
+            Blur is already a very strong CD, and this conduit drops its
+            cooldown to 43 seconds. <br />
+            This can be used to DR certain repetitive mechanics or simply just
+            boost your overall survivability.
+          </span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex" style={{ justifyContent: "center" }}>
+            <img src={require("./dwf.jpg")} height={50} width={50} />
+          </div>
+          <span class="text-center max-w-xs">
+            At max level this conduit boosts your magic resistance up to 23%
+            (not including vers and other DR). This lets you
           </span>
         </div>
       </div>
