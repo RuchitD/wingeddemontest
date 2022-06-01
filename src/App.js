@@ -234,7 +234,12 @@ function App() {
           }}
         >
           <div>
-            <img src={require("./Nadjiattwo.jpg")} height={300} width={600} />
+            <img
+              src={require("./Nadjiattwo.jpg")}
+              height={300}
+              width={600}
+              data-tip="Casting Eyebeam summons a Vengeance Demon Hunter who casts Fel Devastation"
+            />
             <p>
               This setup is more geared towards raid where Dauntless Duelist is
               unmatched.
@@ -261,7 +266,15 @@ function App() {
         }}
       >
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="
+            
+The cooldown of
+Blur
+is reduced by 17 sec."
+          >
             <img src={require("./defender.jpg")} height={50} width={50} />
           </div>
 
@@ -273,7 +286,12 @@ function App() {
           </span>
         </div>
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="
+            Demonic Wards reduces magic damage taken by an additional 12.0%."
+          >
             <img src={require("./ink.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
@@ -291,7 +309,12 @@ function App() {
         }}
       >
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="
+            Chaos Strike has a 11.0% chance to trigger a second Chaos Strike. "
+          >
             <img src={require("./relentless.jpg")} height={50} width={50} />
           </div>
 
@@ -303,7 +326,12 @@ function App() {
           </span>
         </div>
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="
+            Immolation Aura's damage increases by 22.0% each time it deals damage. "
+          >
             <img src={require("./growinginferno.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
@@ -321,7 +349,11 @@ function App() {
         }}
       >
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="First target you damage in combat is your adversary, you deal 3% more damage to them and take 1.5% less from the. You can only have one at a time."
+          >
             <img src={require("./duel.jpg")} height={50} width={50} />
           </div>
 
@@ -333,7 +365,11 @@ function App() {
           </span>
         </div>
         <div class="flex flex-col">
-          <div class="flex" style={{ justifyContent: "center" }}>
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip="The final slash of Blade Dance deals 80% more damage"
+          >
             <img src={require("./dwf.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
@@ -365,9 +401,9 @@ function App() {
           >
             Collective Anguish
           </span>{" "}
-          is the go to for almost all situations simply because it provides a
-          consistent playstyle due to Fel Devastation also extending brand.{" "}
-          <br />
+          is the go to for M+ and almost all boss fights simply because it
+          provides a consistent playstyle due to Fel Devastation also extending
+          brand. <br />
           You can run{" "}
           <span
             class="tooltip text-orange-600"
