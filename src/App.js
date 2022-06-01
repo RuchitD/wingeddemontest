@@ -343,6 +343,43 @@ function App() {
         </div>
       </div>
 
+      <div style={{ paddingTop: "2rem" }}>
+        <p class="text-center font-bold	"> Talents </p>
+      </div>
+
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> Legendaries </p>
+        <p class="text-center">
+          {" "}
+          There are two legendaries a Venthyr Havoc will use, and by two, I mean
+          one. <br />
+          <span
+            class="tooltip text-orange-600"
+            data-tip="Casting Eyebeam summons a Vengeance Demon Hunter who casts Fel Devastation"
+          >
+            Collective Anguish
+          </span>{" "}
+          is the go to for almost all situations simply because it provides a
+          consistent playstyle due to Fel Devastation also extending brand.{" "}
+          <br />
+          You can run{" "}
+          <span
+            class="tooltip text-orange-600"
+            data-tip="Eyebeam has a 40% Chance to Refund its Cooldown and Cost (This can proc itself)"
+          >
+            Darkglare Medalion
+          </span>{" "}
+          for certain boss fights (Skolex, Dausegne) but often cases the RNG
+          ends up hurting you.
+        </p>
+      </div>
+
       <div
         class="w-96 mx-auto "
         style={{
