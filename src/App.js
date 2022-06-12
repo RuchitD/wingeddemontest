@@ -465,6 +465,48 @@ is reduced by 17 sec."
         <hr />
       </div>
       <div
+        class="flex"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <div
+          class="flex"
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "2rem",
+          }}
+        >
+          {" "}
+        </div>
+
+        <div
+          style={{
+            paddingTop: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p class="text-center font-bold	"> TLDR </p>
+          <img src={require("./simyo.gif")} />
+        </div>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center">
+          {" "}
+          Nine out of Ten gear problems can be solved by simming.
+        </p>
+      </div>
+      <div
         style={{
           justifyContent: "center",
           alignItems: "center",
