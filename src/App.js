@@ -207,17 +207,6 @@ function App() {
         Loading...
       </div>
 
-      <div
-        class="w-96 mx-auto "
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-          paddingTop: "2rem",
-        }}
-      >
-        <hr />
-      </div>
-
       <div style={{ paddingTop: "2rem" }}>
         <p class="text-center font-bold	"> Soulbind </p>
         <p class="text-center">
@@ -378,10 +367,59 @@ is reduced by 17 sec."
           </span>
         </div>
       </div>
-
-      <div style={{ paddingTop: "2rem" }}>
-        <p class="text-center font-bold	"> Talents </p>
+      <div
+        class="flex"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <div
+          style={{
+            paddingTop: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p class="text-center font-bold	"> Talents </p>
+          <img src={require("./talents.jpg")} />
+        </div>
       </div>
+      <p class="text-center">
+        {" "}
+        Due to the synergy and strength of Venthyr we are hard locked into this
+        talent set. <br /> Longer eyebeams lead to a longer brand extension and
+        the ability to reduce eyebeam CD gives us the ability for brand to never
+        fall off. <br />
+        For row 45, In M+{" "}
+        <span
+          class="tooltip text-green-600"
+          data-tip="Impales the target for Chaos damage and stuns them for 4 sec. (20yd Range, 30 sec CD)"
+        >
+          Fel Erruption
+        </span>{" "}
+        is your locked choice. It gives you a ranged single target stun, playing
+        this talent properly can allow you to solo lockdown a mob in keys.{" "}
+        <br />
+        In raid depending on fight needs you'll swap between{" "}
+        <span
+          class="tooltip text-green-600"
+          data-tip="
+          Throw Glaive has 2 charges, and snares all enemies hit by 50% for 6 sec."
+        >
+          Master of the Glaive
+        </span>{" "}
+        as a filler or{" "}
+        <span
+          class="tooltip text-green-600"
+          data-tip="
+          Removes the Fury cost of Chaos Nova and reduces its cooldown by 33%."
+        >
+          Unleashed Power
+        </span>{" "}
+        for fights that require frequent AOE stuns.
+      </p>
 
       <div
         style={{
@@ -426,6 +464,27 @@ is reduced by 17 sec."
       >
         <hr />
       </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> BiS Gearing </p>
+      </div>
+
+      <div
+        class="w-96 mx-auto "
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "4rem",
+        }}
+      >
+        <hr />
+      </div>
+
       <div style={{ paddingTop: "5rem" }}>
         <p class="text-center font-bold	"> my links </p>
         <div
