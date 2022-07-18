@@ -85,10 +85,16 @@ function App() {
               </a>
               <ul class="p-2 bg-[#111827]">
                 <li>
-                  <a>BiS Gear</a>
+                  <a>ABC & TLDR</a>
                 </li>
                 <li>
-                  <a>Stats</a>
+                  <a>Mechanical Stuff</a>
+                </li>
+                <li>
+                  <a>Dungeons</a>
+                </li>
+                <li>
+                  <a>Raid</a>
                 </li>
               </ul>
             </li>
@@ -154,24 +160,25 @@ function App() {
           paddingTop: "5rem",
         }}
       >
-        <div class="tooltip" data-tip="Hint: Its vampires">
+        <div class="tooltip" data-tip="I suggest you give it a read">
           <button class="btn btn-outline hover:bg-orange-400">
-            Covenant, Soulbind and Talents
+            About the Site and FAQ
           </button>
         </div>
-        <div class="tooltip" data-tip="Ready to farm Xymox?">
+        <div
+          class="tooltip"
+          data-tip="Its just about my hatred of pomegranates"
+        >
+          <button class="btn btn-outline hover:bg-orange-400">About me</button>
+        </div>
+        <div class="tooltip" data-tip="What I'm working on next">
           <button class="btn btn-outline hover:bg-orange-400">
-            Gear and Stats
+            Updates and Dev Blog
           </button>
         </div>
-        <div class="tooltip" data-tip="Always be casting">
+        <div class="tooltip" data-tip="Talking about whats next for Havoc">
           <button class="btn btn-outline hover:bg-orange-400">
-            Playstyle and Optimization
-          </button>
-        </div>
-        <div class="tooltip" data-tip="Click at your own risk">
-          <button class="btn btn-outline hover:bg-orange-400">
-            Experimental
+            PTR/Beta Stuff
           </button>
         </div>
       </div>
@@ -285,7 +292,9 @@ is reduced by 17 sec."
           </div>
           <span class="text-center max-w-xs">
             At max level this conduit boosts your magic resistance up to 23%
-            (not including vers and other DR). This lets you
+            (not including vers and other DR). This lets you survive most lethal
+            hits. Demon Hunters end up taking the least amount of damage in most
+            logs due to this conduit.
           </span>
         </div>
       </div>
@@ -308,10 +317,8 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
-            Blur is already a very strong CD, and this conduit drops its
-            cooldown to 43 seconds. <br />
-            This can be used to DR certain repetitive mechanics or simply just
-            boost your overall survivability.
+            Spam Chaos Strike. Chance to spam more Chaos Strike. What else is
+            there to say? Chance to refund as well.
           </span>
         </div>
         <div class="flex flex-col">
@@ -324,8 +331,8 @@ is reduced by 17 sec."
             <img src={require("./growinginferno.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
-            At max level this conduit boosts your magic resistance up to 23%
-            (not including vers and other DR). This lets you
+            Our best scaling damage conduit. A good single target boost. More
+            noticable on AOE. We'll take all the uncapped damage we can get.
           </span>
         </div>
       </div>
@@ -347,10 +354,8 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
-            Blur is already a very strong CD, and this conduit drops its
-            cooldown to 43 seconds. <br />
-            This can be used to DR certain repetitive mechanics or simply just
-            boost your overall survivability.
+            Defacto raid choice. Solid DPS Increase. We don't have any triple
+            potency conduits to compete with this slot.
           </span>
         </div>
         <div class="flex flex-col">
@@ -362,8 +367,9 @@ is reduced by 17 sec."
             <img src={require("./dwf.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
-            At max level this conduit boosts your magic resistance up to 23%
-            (not including vers and other DR). This lets you
+            Purely M+ Conduit. Combined with the tier set 2 PC it makes
+            Deathsweep hit like a truck on AOE situations. In addition Dauntless
+            Duelist has less value in AOE. Making this a no brainer.
           </span>
         </div>
       </div>
@@ -449,8 +455,7 @@ is reduced by 17 sec."
           >
             Darkglare Medalion
           </span>{" "}
-          for certain boss fights (Skolex, Dausegne) but often cases the RNG
-          ends up hurting you.
+          if you want. Nobody uses this however. The RNG hurts too much.
         </p>
       </div>
 
@@ -515,7 +520,162 @@ is reduced by 17 sec."
       >
         <p class="text-center font-bold	"> BiS Gearing </p>
       </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center">
+          {" "}
+          There's mainly three important items to target in Season 4. Aside from
+          that checking your sims frequently will net better results.
+        </p>
+      </div>
+      <div
+        class="flex"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <div class="flex flex-col">
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip=" While you are behind your enemies, their movement is impaired, or they are suffering from loss-of-control effects, your attacks have a high chance to cause them to bleed for Physical damage over 6 sec."
+          >
+            <img src={require("./veinripper.jpg")} height={50} width={50} />
+          </div>
 
+          <span class="text-center max-w-xs">
+            The passive damage from these weapons is second to none even with
+            the loss of stats. <br />
+            In addition the bleed is affected by haste, so a more frequent
+            demonic build only compliments the passive even more. You'll be dual
+            weilding these. It's reccomended to use two tokens for MH and OH.
+          </span>
+        </div>
+        <div class="flex flex-col">
+          <div
+            class="flex tooltip"
+            style={{ justifyContent: "center" }}
+            data-tip=" Periodically rummage through the cache, finding a new stolen weapon.
+           Activate to grab the weapon from the cache, gaining its benefit. "
+          >
+            <img src={require("./cache.jpg")} height={50} width={50} />
+          </div>
+          <span class="text-center max-w-xs">
+            The Cache trinket from Xymox remains our strongest trinket when we
+            use the Axe bleed. It is recomended to use a token on this.
+          </span>
+        </div>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> Stats </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center">
+          {" "}
+          God I was dreading this part. Stats in a sense don't matter for DH
+        </p>
+      </div>
+
+      <div
+        class="w-96 mx-auto "
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "4rem",
+        }}
+      >
+        <hr />
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> ABC & TLDR </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center"> Guess the most common DH mistake. </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> Mechanial Optimization </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> Dungeons </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center">
+          {" "}
+          I'm simply not wasting time making guides for content that's
+          irrelvant. This is will be updated in Dragonflight{" "}
+        </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "2rem",
+        }}
+      >
+        <p class="text-center font-bold	"> Raid </p>
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <p class="text-center">
+          {" "}
+          I'm simply not wasting time making guides for content that's
+          irrelvant. This is will be updated in Dragonflight{" "}
+        </p>
+      </div>
       <div
         class="w-96 mx-auto "
         style={{
@@ -557,7 +717,7 @@ is reduced by 17 sec."
       <div style={{ paddingTop: "1rem" }}>
         <p class="text-center font-bold	"> thanks to </p>
         <div class="whitespace-pre ...">
-          <p class="text-center"> special people</p>
+          <p class="text-center"> special people </p>
         </div>
       </div>
     </div>
