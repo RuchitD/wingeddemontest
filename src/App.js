@@ -37,11 +37,18 @@ function Index() {
               </a>
               <ul class="p-2 bg-[#111827]  ">
                 <li>
-                  <a>Covenant</a>
+                  <a href="#covenant" class="visuallyhidden focusable">
+                    Covenant
+                  </a>
                 </li>
-                <li>
-                  <a>Soulbind</a>
-                </li>
+                <nav>
+                  <li>
+                    <a href="#soulbind" class="visuallyhidden focusable">
+                      {" "}
+                      Soulbind
+                    </a>
+                  </li>
+                </nav>
                 <li>
                   <a>Talents</a>
                 </li>
@@ -195,7 +202,7 @@ function Index() {
       >
         <hr />
       </div>
-      <div style={{ paddingTop: "2rem" }}>
+      <div style={{ paddingTop: "2rem" }} id="covenant">
         <p class="text-center font-bold	"> Covenant </p>
         <p class="text-center">
           {" "}
@@ -215,7 +222,7 @@ function Index() {
       >
         Loading...
       </div>
-
+      <div id="soulbind"></div>
       <div style={{ paddingTop: "2rem" }}>
         <p class="text-center font-bold	"> Soulbind </p>
         <p class="text-center">
@@ -263,7 +270,7 @@ function Index() {
           paddingTop: "2rem",
         }}
       >
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -292,7 +299,7 @@ is reduced by 17 sec."
             boost your overall survivability.
           </span>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -326,7 +333,7 @@ is reduced by 17 sec."
           paddingTop: "2rem",
         }}
       >
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -350,7 +357,7 @@ is reduced by 17 sec."
             there to say? Chance to refund as well.
           </span>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -382,7 +389,7 @@ is reduced by 17 sec."
           paddingTop: "1rem",
         }}
       >
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -405,7 +412,7 @@ is reduced by 17 sec."
             potency conduits to compete with this slot.
           </span>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
@@ -590,7 +597,7 @@ is reduced by 17 sec."
         </p>
       </div>
       <div
-        class="flex"
+        class="flex justify-self-start"
         style={{
           justifyContent: "center",
           alignItems: "center",
@@ -623,7 +630,7 @@ is reduced by 17 sec."
             weilding these. It's reccomended to use two tokens for MH and OH.
           </span>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col self-start">
           <div
             class="flex tooltip"
             style={{ justifyContent: "center" }}
