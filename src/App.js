@@ -2,8 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import ReactPlayer from "react-player";
 import { useEffect } from "react";
-
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Faq from "./faq.js";
+import Bladedance from "./bladedance.js";
+function Index() {
   useEffect(() => {
     if (window.bloodmallet_chart_import) {
       window.bloodmallet_chart_import();
@@ -275,6 +277,15 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Fel Defender </p>
+            </div>
             Blur is already a very strong CD, and this conduit drops its
             cooldown to 43 seconds. <br />
             This can be used to DR certain repetitive mechanics or simply just
@@ -291,6 +302,15 @@ is reduced by 17 sec."
             <img src={require("./ink.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Viscous Ink </p>
+            </div>
             At max level this conduit boosts your magic resistance up to 23%
             (not including vers and other DR). This lets you survive most lethal
             hits. Demon Hunters end up taking the least amount of damage in most
@@ -317,6 +337,15 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Relentless Onslaught</p>
+            </div>
             Spam Chaos Strike. Chance to spam more Chaos Strike. What else is
             there to say? Chance to refund as well.
           </span>
@@ -331,8 +360,17 @@ is reduced by 17 sec."
             <img src={require("./growinginferno.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Growing Inferno </p>
+            </div>
             Our best scaling damage conduit. A good single target boost. More
-            noticable on AOE. We'll take all the uncapped damage we can get.
+            noticeable on AOE. We'll take all the uncapped damage we can get.
           </span>
         </div>
       </div>
@@ -341,7 +379,7 @@ is reduced by 17 sec."
         style={{
           justifyContent: "center",
           alignItems: "center",
-          paddingTop: "2rem",
+          paddingTop: "1rem",
         }}
       >
         <div class="flex flex-col">
@@ -354,6 +392,15 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "2rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Dauntless Duelist </p>
+            </div>
             Defacto raid choice. Solid DPS Increase. We don't have any triple
             potency conduits to compete with this slot.
           </span>
@@ -367,6 +414,15 @@ is reduced by 17 sec."
             <img src={require("./dwf.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "2rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Dancing With Fate </p>
+            </div>
             Purely M+ Conduit. Combined with the tier set 2 PC it makes
             Deathsweep hit like a truck on AOE situations. In addition Dauntless
             Duelist has less value in AOE. Making this a no brainer.
@@ -551,6 +607,15 @@ is reduced by 17 sec."
           </div>
 
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Cruciform Veinripper </p>
+            </div>
             The passive damage from these weapons is second to none even with
             the loss of stats. <br />
             In addition the bleed is affected by haste, so a more frequent
@@ -568,6 +633,15 @@ is reduced by 17 sec."
             <img src={require("./cache.jpg")} height={50} width={50} />
           </div>
           <span class="text-center max-w-xs">
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <p class="text-center font-bold	"> Cache of Acquired Treasures </p>
+            </div>
             The Cache trinket from Xymox remains our strongest trinket when we
             use the Axe bleed. It is recomended to use a token on this.
           </span>
@@ -589,9 +663,12 @@ is reduced by 17 sec."
         }}
       >
         {" "}
-        <p class="text-center">
+        <p class=" w-96 mx-auto text-center">
           {" "}
-          God I was dreading this part. Stats in a sense don't matter for DH
+          God I was dreading this part. <br /> Stats in a sense don't matter for
+          Havoc. Just don't get mastery on any gear You're better off simming
+          gear constantly. There's no secret sauce here. We have horrible stat
+          scaling. Crit/Haste/Vers is nice on all slots.
         </p>
       </div>
 
@@ -621,7 +698,13 @@ is reduced by 17 sec."
         }}
       >
         {" "}
-        <p class="text-center"> Guess the most common DH mistake. </p>
+        <p class="text-center">
+          {" "}
+          Guess the most common DH mistake. Technically there's two but I'll get
+          to the second one later. If you guessed "Not Casting" you're correct.
+          Go to a top log, go to your log, compare your casts of abilities.{" "}
+          <br />I guarantee they cast way more than you.{" "}
+        </p>
       </div>
       <div
         style={{
@@ -721,6 +804,17 @@ is reduced by 17 sec."
         </div>
       </div>
     </div>
+  );
+}
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/bladedance" element={<Bladedance />} />
+      </Routes>
+    </Router>
   );
 }
 
