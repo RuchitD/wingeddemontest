@@ -50,10 +50,19 @@ function Index() {
                   </li>
                 </nav>
                 <li>
-                  <a>Talents</a>
+                  <a href="#conduit" class="visuallyhidden focusable">
+                    Conduits
+                  </a>
                 </li>
                 <li>
-                  <a>Legendaries</a>
+                  <a href="#talent" class="visuallyhidden focusable">
+                    Talents
+                  </a>
+                </li>
+                <li>
+                  <a href="#lego" class="visuallyhidden focusable">
+                    Legendaries
+                  </a>
                 </li>
               </ul>
             </li>
@@ -72,10 +81,14 @@ function Index() {
               </a>
               <ul class="p-2 bg-[#111827]">
                 <li>
-                  <a>BiS Gear</a>
+                  <a href="#gear" class="visuallyhidden focusable">
+                    BiS Gear
+                  </a>
                 </li>
                 <li>
-                  <a>Stats</a>
+                  <a href="#stats" class="visuallyhidden focusable">
+                    Stats
+                  </a>
                 </li>
               </ul>
             </li>
@@ -94,7 +107,9 @@ function Index() {
               </a>
               <ul class="p-2 bg-[#111827]">
                 <li>
-                  <a>ABC & TLDR</a>
+                  <a href="#tldr" class="visuallyhidden focusable">
+                    ABC & TLDR
+                  </a>
                 </li>
                 <li>
                   <a>Mechanical Stuff</a>
@@ -231,7 +246,7 @@ function Index() {
           Triple Potency. (Triple for keys, double usually for raid)
         </p>
         <div
-          class="flex"
+          class="flex self-start"
           style={{
             justifyContent: "center",
             alignItems: "center",
@@ -239,26 +254,27 @@ function Index() {
           }}
         >
           <div>
-            <img
-              src={require("./Nadjiattwo.jpg")}
-              height={300}
-              width={600}
-              data-tip="Casting Eyebeam summons a Vengeance Demon Hunter who casts Fel Devastation"
-            />
             <p>
+              <a href="https://www.wowhead.com/soulbind-calc/embed/venthyr/nadjia-the-mistblade/demon-hunter/AwaWr74CBStvChUsaAoSBS0fCiUszwoiFSrvCjUq-go">
+                {" "}
+                Loading{" "}
+              </a>
               This setup is more geared towards raid where Dauntless Duelist is
               unmatched.
             </p>
           </div>
-          <div style={{ paddingLeft: "1rem" }}>
-            <img src={require("./Nadjiathree.jpg")} height={300} width={600} />
+          <div class="self-start" style={{ paddingLeft: "1rem" }}>
             <p>
+              <a href=" https://www.wowhead.com/soulbind-calc/embed/venthyr/nadjia-the-mistblade/demon-hunter/AwaWpb4CBStvChUsaAoTBS0fChUtHAolLM8KIhUq7wo1KvoK">
+                {" "}
+                Loading{" "}
+              </a>
               For M+ you're going to run Triple Potency since Dauntless Duelist
               isn't as effective
             </p>
           </div>
         </div>
-        <div style={{ paddingTop: "2rem" }}>
+        <div id="conduit" style={{ paddingTop: "2rem" }}>
           <p class="text-center font-bold	"> Conduits </p>
         </div>
       </div>
@@ -445,6 +461,7 @@ is reduced by 17 sec."
         }}
       >
         <div
+          id="talent"
           style={{
             paddingTop: "2rem",
             justifyContent: "center",
@@ -491,6 +508,7 @@ is reduced by 17 sec."
       </p>
 
       <div
+        id="lego"
         style={{
           justifyContent: "center",
           alignItems: "center",
@@ -580,6 +598,7 @@ is reduced by 17 sec."
           alignItems: "center",
           paddingTop: "2rem",
         }}
+        id="gear"
       >
         <p class="text-center font-bold	"> BiS Gearing </p>
       </div>
@@ -654,13 +673,16 @@ is reduced by 17 sec."
           </span>
         </div>
       </div>
+
       <div
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        id="unique-id-2 "
+        class="bloodmallet_chart  w-1/2 mx-auto"
+        data-wow-class="demon_hunter"
+        data-wow-spec="havoc"
+        data-type="trinkets"
+        style={{ justifyContent: "center", alignItems: "center" }}
       >
-        <p class="text-center font-bold	"> Stats </p>
+        Loading...
       </div>
       <div
         style={{
@@ -668,13 +690,21 @@ is reduced by 17 sec."
           alignItems: "center",
         }}
       >
-        {" "}
+        <div
+          style={{
+            paddingTop: "2rem",
+          }}
+          id="stats"
+        >
+          <p class="text-center font-bold	"> Stats </p>
+        </div>{" "}
         <p class=" w-96 mx-auto text-center">
           {" "}
-          God I was dreading this part. <br /> Stats in a sense don't matter for
-          Havoc. Just don't get mastery on any gear You're better off simming
-          gear constantly. There's no secret sauce here. We have horrible stat
-          scaling. Crit/Haste/Vers is nice on all slots.
+          Stats, in a sense, don't matter for Havoc. Just don't get mastery on
+          any gear. (While this may seem counterintuitive, mastery doesn't scale
+          well) You're better off simming your gear constantly. There's no
+          secret sauce here - we have horrible stat scaling. Crit/Haste/Vers is
+          nice on all slots.
         </p>
       </div>
 
@@ -683,6 +713,7 @@ is reduced by 17 sec."
         style={{
           justifyContent: "center",
           alignItems: "center",
+          paddingTop: "2rem",
         }}
       >
         <hr />
