@@ -658,7 +658,6 @@ is reduced by 17 sec."
         style={{
           justifyContent: "center",
           alignItems: "center",
-          paddingTop: "2rem",
         }}
       >
         <p class="text-center font-bold	"> Stats </p>
@@ -684,7 +683,6 @@ is reduced by 17 sec."
         style={{
           justifyContent: "center",
           alignItems: "center",
-          paddingTop: "4rem",
         }}
       >
         <hr />
