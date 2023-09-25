@@ -147,7 +147,7 @@ function Index() {
         <p class="text-center font-bold	"> about </p>
         <p class="text-center">
           {" "}
-          Let me start by saying that this site assumes you know how to play
+          Let me start by saying that this site assumed you know how to play
           havoc. I'm not teaching you what every button does. The purpose of
           this site is to help optimize and improve.{" "}
         </p>
